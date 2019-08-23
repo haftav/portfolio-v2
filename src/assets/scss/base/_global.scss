@@ -1,3 +1,23 @@
 h1, h2, h3 {
     font-family: 'Lora', sans-serif;
 }
+
+h1 {
+    font-size: 60px;
+}
+
+@include breakpoint-sm {
+    h1 {
+        font-size: 84px;
+    }
+}
+
+@include breakpoint-md {
+
+}
+
+@include breakpoint-lg {
+    h1 {
+        font-size: 134px;
+    }
+}

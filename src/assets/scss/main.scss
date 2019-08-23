@@ -1,11 +1,15 @@
 // RESET
 @import '../css/reset';
 
-// GLOBAL STYLES
-@import './base/_global';
+// VARIABLES
+@import './base/_variables';
 
 // MIXINS
 @import './mixins/_layouts';
+@import './mixins/_breakpoints';
+
+// GLOBAL STYLES
+@import './base/_global';
 
 // COMPONENTS
 @import './components/_Splash';
