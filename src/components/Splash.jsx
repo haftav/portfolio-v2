@@ -1,9 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 export default () => {
-    return (
-        <div className='splash'>
-            splash
-        </div>
-    )
+  return (
+    <div className="splash">
+      <div className="splash__headerContainer">
+        <h1 className="splash__header">Hi, I'm Tav.</h1>
+      </div>
+      <div className="splash__subheaderContainer">
+        <h3 className="splash__subheader">
+          I specialize in creating optimized and elegant web experiences.
+        </h3>
+      </div>
+    </div>
+  )
 }
