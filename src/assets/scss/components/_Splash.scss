@@ -9,18 +9,26 @@
     @include flex-row-center;
     width: 80%;
     height: 200px;
-    margin: 25px auto 0px auto;
+    margin: 55px auto 0px auto;
     background-color: white;
 }
 
 .splash__subheaderContainer {
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    border: 1px solid red;
+}
+
+.splash__subheaderWrapper {
+    @include flex-row-center;
     width: 80%;
     height: 200px;
-    margin: 50px auto 0px auto;
+    margin: 0px auto 70px auto;
     position: relative;
-    z-index: 2;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid $color-gray-border;
     text-align: center;
 }
 
