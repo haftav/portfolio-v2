@@ -1,1 +1,12 @@
-@import './_components';
+// RESET
+@import '../css/reset';
+
+// MIXINS
+@import './mixins/_layouts';
+
+// COMPONENTS
+@import './components/_Splash';
+@import './components/_About';
+@import './components/_Skills';
+@import './components/_Contact';
+
