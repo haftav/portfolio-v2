@@ -15,9 +15,9 @@ export default () => {
           </h3>
         </div>
       </div>
-      {/* <div className='splash__diagonalContainer'>
+      <div className='splash__diagonalContainer'>
         <SplashDiagonal />
-      </div> */}
+      </div>
     </div>
   )
 }

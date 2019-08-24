@@ -19,3 +19,9 @@
         @content
     }
 }
+
+@mixin breakpoint-mobile-tall {
+    @media screen and (max-width: $layout-breakpoint-sm) and (min-height: 700px) {
+        @content
+    }
+}
