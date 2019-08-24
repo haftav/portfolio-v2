@@ -13,6 +13,12 @@
     z-index: 3;
     background-color: white;
     color: $color-title;
+
+    @include breakpoint-sm {
+        width: 415px;
+        height: 300px;
+        margin: 75px 0px 0px 75px;
+    }
 }
 
 .splash__subheaderContainer {
@@ -26,20 +32,33 @@
     @include breakpoint-mobile-tall {
         bottom: 70px;
     }
+
+    @include breakpoint-sm {
+        bottom: 70px;
+    }
 }
 
 .splash__subheaderWrapper {
     @include flex-row-center;
     align-items: flex-start;
     width: 296px;
-    max-height: 272px;
-    // min-height: 272px;
+    height: 232px;
     margin: 0px auto 0px auto;
     padding: 0px 15px;
     position: relative;
     background-color: white;
     border: 1px solid $color-gray-border;
     text-align: center;
+
+    @include breakpoint-sm {
+        border: 3px solid $color-gray-border;
+        align-items: center;
+        float: right;
+        margin-right: 50px;
+        width: 520px;
+        height: 230px;
+        padding: 0px 40px;
+    }
 }
 
 .splash__diagonalContainer {
@@ -47,15 +66,18 @@
     position: absolute;
     bottom: 0;
     z-index: 1;
-    background-color: peru;
 }
 
-.testy-test {
+.splashDiagonal {
     height: 525px;
     position: absolute;
     bottom: 0;
 
     @include breakpoint-mobile-tall {
+        height: 700px;
+    }
+
+    @include breakpoint-sm {
         height: 700px;
     }
 }
