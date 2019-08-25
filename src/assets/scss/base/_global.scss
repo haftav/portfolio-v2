@@ -2,8 +2,21 @@ h1, h2, h3 {
     font-family: 'Lora', sans-serif;
 }
 
+nav, ul, li, span, p {
+    font-family: 'Lato', sans-serif;
+}
+
 h1 {
     font-size: 60px;
+}
+
+h2 {
+
+}
+
+h3 {    
+    font-size: 36px;
+    line-height: 1.3em;
 }
 
 @include breakpoint-sm {
@@ -12,12 +25,20 @@ h1 {
     }
 }
 
-@include breakpoint-md {
-
-}
-
 @include breakpoint-lg {
     h1 {
-        font-size: 134px;
+        font-size: 100px;
+    }
+}
+
+@include breakpoint-xl {
+    h1 {
+        font-size: 120px;
+    }
+}
+
+@include breakpoint-desktop-short {
+    h1 {
+        font-size: 100px;
     }
 }
