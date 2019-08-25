@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+@mixin landscape-mode {
+    height: 850px;
+}
+
 @mixin flex-row-center {
     display: flex;
     justify-content: center;

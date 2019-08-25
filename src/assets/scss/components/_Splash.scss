@@ -2,6 +2,10 @@
     @include full-screen-container;
     position: relative;
     background-color: lightseagreen;
+
+    @include breakpoint-mobile-landscape {
+        @include landscape-mode;
+    }
 }
 
 .splash__headerContainer {
@@ -112,4 +116,14 @@
             width: 100%;
         }
     }
+}
+
+.backgroundLeft {
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backgroundRight {
+
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import Diagonal from './Diagonal.svg'
 
 const SmallDiagonal = () => (
   <svg

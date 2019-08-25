@@ -38,3 +38,8 @@
     }
 }
 
+@mixin breakpoint-mobile-landscape {
+    @media screen and (orientation: landscape) {
+        @content
+    }
+}

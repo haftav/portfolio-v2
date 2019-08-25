@@ -6,7 +6,10 @@ export default () => {
   return (
     <div className="splash">
       <div className="splash__headerContainer">
-        <h1 className="splash__header">Hi,<br /> I'm Tav.</h1>
+        <h1 className="splash__header">
+          Hi,
+          <br /> I'm Tav.
+        </h1>
       </div>
       <div className="splash__subheaderContainer">
         <div className="splash__subheaderWrapper">
@@ -15,9 +18,11 @@ export default () => {
           </h3>
         </div>
       </div>
-      <div className='splash__diagonalContainer'>
+      <div className="splash__diagonalContainer">
         <SplashDiagonal />
       </div>
+      <div className="backgroundLeft" />
+      <div className="backgroundRight" />
     </div>
   )
 }
