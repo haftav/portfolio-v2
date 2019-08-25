@@ -25,12 +25,20 @@ h3 {
     }
 }
 
-@include breakpoint-md {
-
-}
-
 @include breakpoint-lg {
     h1 {
+        font-size: 100px;
+    }
+}
+
+@include breakpoint-xl {
+    h1 {
         font-size: 134px;
+    }
+}
+
+@include breakpoint-desktop-short {
+    h1 {
+        font-size: 100px;
     }
 }

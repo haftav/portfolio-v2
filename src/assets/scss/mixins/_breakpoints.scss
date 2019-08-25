@@ -20,8 +20,21 @@
     }
 }
 
+@mixin breakpoint-xl {
+    @media screen and (min-width: $layout-breakpoint-xl) {
+        @content
+    }
+}
+
 @mixin breakpoint-mobile-tall {
     @media screen and (max-width: $layout-breakpoint-sm) and (min-height: 700px) {
         @content
     }
 }
+
+@mixin breakpoint-desktop-short {
+    @media screen and (min-width: $layout-breakpoint-lg) and (max-height: 800px) {
+        @content
+    }
+}
+
