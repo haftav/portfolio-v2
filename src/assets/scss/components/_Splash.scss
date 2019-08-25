@@ -41,7 +41,7 @@
     width: 100%;
     height: auto;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 20px;
     color: $color-title;
 
@@ -86,7 +86,7 @@
     height: auto;
     position: absolute;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .splashDiagonal {
@@ -119,11 +119,32 @@
 }
 
 .backgroundLeft {
-    background-attachment:fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../components/Splash/images/green-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include breakpoint-lg {
+        width: 50%;
+    }
 }
 
 .backgroundRight {
-
+    display: none;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../../components/Splash/images/blue-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    @include breakpoint-lg {
+        display: block;
+    }
 }

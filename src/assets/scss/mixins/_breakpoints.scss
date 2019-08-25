@@ -39,7 +39,7 @@
 }
 
 @mixin breakpoint-mobile-landscape {
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (max-width: $layout-breakpoint-lg) {
         @content
     }
 }
