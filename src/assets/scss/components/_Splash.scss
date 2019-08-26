@@ -6,6 +6,10 @@
     @include breakpoint-mobile-landscape {
         @include landscape-mode;
     }
+
+    @include breakpoint-tablet-tall {
+        max-height: 1200px;
+    }
 }
 
 .splash__headerContainer {
@@ -33,7 +37,7 @@
     @include breakpoint-desktop-short {
         width: 415px;
         height: 300px;
-        margin: 30px 0px 0px 30px;
+        margin: 50px 0px 0px 50px;
     }
 }
 
@@ -78,6 +82,10 @@
         width: 520px;
         height: 230px;
         padding: 0px 40px;
+    }
+
+    @include breakpoint-lg {
+        margin-right: 75px;
     }
 }
 
@@ -127,24 +135,4 @@
     background-image: url("../../components/Splash/images/green-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    @include breakpoint-lg {
-        width: 50%;
-    }
-}
-
-.backgroundRight {
-    display: none;
-    width: 50%;
-    height: 60%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("../../components/Splash/images/blue-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    @include breakpoint-lg {
-        display: block;
-    }
 }

@@ -32,6 +32,15 @@
     }
 }
 
+@mixin breakpoint-tablet-tall {
+    @media screen 
+    and (min-width: $layout-breakpoint-sm) 
+    and (max-width: $layout-breakpoint-lg) 
+    and (min-height: 800px) {
+        @content
+    }
+}
+
 @mixin breakpoint-desktop-short {
     @media screen and (min-width: $layout-breakpoint-lg) and (max-height: 800px) {
         @content
@@ -39,7 +48,9 @@
 }
 
 @mixin breakpoint-mobile-landscape {
-    @media screen and (orientation: landscape) and (max-width: $layout-breakpoint-lg) {
+    @media screen and (orientation: landscape) 
+    and (max-width: $layout-breakpoint-lg)
+    and (max-height: 750px) {
         @content
     }
 }

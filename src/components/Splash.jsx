@@ -22,7 +22,6 @@ export default () => {
         <SplashDiagonal />
       </div>
       <div className="backgroundLeft" />
-      <div className="backgroundRight" />
     </div>
   )
 }
