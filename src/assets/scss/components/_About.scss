@@ -1,6 +1,6 @@
 .about {
     @include full-screen-container;
-    height: 110vh;
+    height: auto;
 }
 
 .about__header {
@@ -15,12 +15,13 @@
 }
 
 .about__textContainer {
-    font-size: 17px;
-    margin: 0px 10px;
+    font-size: 20px;
+    margin: auto;
+    width: 310px;
 }
 
 .about__paragraph {
     margin: 20px auto;
     text-align: center;
-    line-height: 33px;
+    line-height: 36px;
 }
