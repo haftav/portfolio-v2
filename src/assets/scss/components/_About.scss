@@ -18,6 +18,10 @@
     font-size: 20px;
     margin: auto;
     width: 310px;
+
+    @include breakpoint-mobile-landscape {
+        width: 75%
+    }
 }
 
 .about__paragraph {
