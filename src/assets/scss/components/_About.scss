@@ -1,3 +1,26 @@
 .about {
     @include full-screen-container;
+    height: 110vh;
+}
+
+.about__header {
+    margin: 35px auto 15px auto;
+}
+
+.about__divider {
+    width: 195px;
+    height: 1px;
+    background: $color-gray-border;
+    margin: auto;
+}
+
+.about__textContainer {
+    font-size: 17px;
+    margin: 0px 10px;
+}
+
+.about__paragraph {
+    margin: 20px auto;
+    text-align: center;
+    line-height: 33px;
 }
