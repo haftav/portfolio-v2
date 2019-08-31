@@ -31,6 +31,7 @@ export default () => {
         </div>
       </div>
       <div className="about__desktopContainerRight">
+        <div className="about__desktopDivider"/>
         <img
           src={photo}
           alt="Tav Hafner desktop"

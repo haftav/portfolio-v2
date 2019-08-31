@@ -1,6 +1,12 @@
 .about {
     @include full-screen-container;
     height: auto;
+    max-width: 1920px;
+    margin: auto;
+    @include breakpoint-lg {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .about__headerContainer {
@@ -87,20 +93,31 @@
 
     @include breakpoint-lg {
         display: inline-block;
-        width: 70%;
+        width: 60%;
     }
 }
 
 .about__desktopContainerRight {
     display: none;
-    float: right;
-    width: 30%;
-
+    width: 40%;
+    height: 100%;
     @include breakpoint-lg {
-        display: inline-block;
+        display: flex;
+
     }
 }
 
+.about__desktopDivider {
+    display: inline-block;
+    width: 1px;
+    height: 440px;
+    margin-right: 50px;
+    background: $color-gray-border;
+}
+
 .about__photoDesktop {
+    width: auto;
+    height: auto;
+    margin-right: 50px;
     border-radius: 50%;
 }
