@@ -26,6 +26,12 @@ h3 {
     }
 }
 
+@include breakpoint-md {
+    h2 {
+        font-size: 65px;
+    }
+}
+
 @include breakpoint-lg {
     h1 {
         font-size: 100px;

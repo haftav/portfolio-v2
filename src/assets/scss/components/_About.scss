@@ -3,8 +3,25 @@
     height: auto;
 }
 
+.about__headerContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    @include breakpoint-md {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
 .about__header {
-    margin: 35px auto 15px auto;
+    margin: 35px 0px 15px 0px;
+
+    @include breakpoint-md {
+        margin: 0px;
+    }
 }
 
 .about__divider {
@@ -12,6 +29,23 @@
     height: 1px;
     background: $color-gray-border;
     margin: auto;
+
+    @include breakpoint-md {
+        width: 1px;
+        height: 195px;
+        margin: 0px;
+    }
+}
+
+.about__photo {
+    display: none;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+
+    @include breakpoint-md {
+        display: block;
+    }
 }
 
 .about__textContainer {
@@ -21,6 +55,11 @@
 
     @include breakpoint-mobile-landscape {
         width: 75%
+    }
+
+    @include breakpoint-md {
+        width: 75%;
+        margin-top: 75px;
     }
 }
 

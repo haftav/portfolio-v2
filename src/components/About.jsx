@@ -1,10 +1,15 @@
 import React from 'react'
 
+import photo from './About/images/photo.jpg'
+
 export default () => {
   return (
     <div className="about">
-      <h2 className="about__header">About Me</h2>
-      <div className="about__divider"/>
+      <div className="about__headerContainer">
+        <h2 className="about__header">About Me</h2>
+        <div className="about__divider" />
+        <img src={photo} alt="Tav Hafner tablet" className="about__photo"/>
+      </div>
       <div className="about__textContainer">
         <p className="about__paragraph">
           I’m a professional web developer with experience building and
