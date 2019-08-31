@@ -35,9 +35,13 @@
         height: 195px;
         margin: 0px;
     }
+
+    @include breakpoint-lg {
+        display: none;
+    }
 }
 
-.about__photo {
+.about__photoTablet {
     display: none;
     border-radius: 50%;
     width: 140px;
@@ -46,12 +50,17 @@
     @include breakpoint-md {
         display: block;
     }
+
+    @include breakpoint-lg {
+        display: none;
+    }
 }
 
 .about__textContainer {
     font-size: 20px;
     margin: auto;
     width: 310px;
+    text-align: center;
 
     @include breakpoint-mobile-landscape {
         width: 75%
@@ -61,10 +70,37 @@
         width: 75%;
         margin-top: 75px;
     }
+
+    @include breakpoint-lg {
+        margin-top: 50px;
+        width: 65%;
+        text-align: left;
+    }
 }
 
 .about__paragraph {
     margin: 20px auto;
-    text-align: center;
     line-height: 36px;
+}
+
+.about__desktopContainerLeft {
+
+    @include breakpoint-lg {
+        display: inline-block;
+        width: 70%;
+    }
+}
+
+.about__desktopContainerRight {
+    display: none;
+    float: right;
+    width: 30%;
+
+    @include breakpoint-lg {
+        display: inline-block;
+    }
+}
+
+.about__photoDesktop {
+    border-radius: 50%;
 }
