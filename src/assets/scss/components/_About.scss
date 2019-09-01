@@ -103,7 +103,7 @@
     height: 100%;
     @include breakpoint-lg {
         display: flex;
-
+        align-items: center;
     }
 }
 
@@ -116,8 +116,9 @@
 }
 
 .about__photoDesktop {
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-width: 450px;
+    height: inherit;
     margin-right: 50px;
     border-radius: 50%;
 }
