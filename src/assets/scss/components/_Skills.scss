@@ -1,26 +1,24 @@
 .skills {
     @include full-screen-container;
 
+    height: auto;
     position: relative;
     z-index: 10;
     overflow: visible;
     overflow-x: hidden;
     background-image: url("../../components/Skills/images/trees.jpg");
     background-repeat: no-repeat;
-    background-size: 400%;
+    background-size: 1000%;
     background-position: bottom;
 }
 
 .skills__dividerContainer {
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 0;
     width: 105%;
     z-index: 5;
     overflow-x: hidden;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
 }
 
 .skills__divider {
@@ -54,4 +52,36 @@
 
 .skills__header {
     margin-top: 65px;
+}
+
+.skills__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 75px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    background-color: $color-dark-blue;
+}
+
+.skills__listItem {
+    min-width: 50%;
+    flex: 0 0 50%;
+    height: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.skills__listSpan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
