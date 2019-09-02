@@ -38,6 +38,10 @@
         height: 300px;
         margin: 50px 0px 0px 50px;
     }
+
+    @include breakpoint-mobile-short {
+        height: 150px;
+    }
 }
 
 .splash__subheaderContainer {
