@@ -34,5 +34,4 @@ export default () => (
     <SmallDiagonal />
     <LargeDiagonal />
   </>
-  // <img src={SmallDiagonal} alt="diagonal" className="diagonal"/>
 )

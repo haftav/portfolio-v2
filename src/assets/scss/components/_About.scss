@@ -3,6 +3,7 @@
     height: auto;
     max-width: 1920px;
     margin: auto;
+    padding-bottom: 25px;
     @include breakpoint-lg {
         display: flex;
         align-items: center;
