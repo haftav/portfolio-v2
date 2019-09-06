@@ -10,7 +10,7 @@ export default () => {
       <div className="skills__colorOverlay" />
       <div className="skills__content">
         <h2 className="skills__header">Skills</h2>
-        <div className="skills__list">
+        {/* <div className="skills__list">
           <div className="skills__listItem">
             <span className="skills__listSpan">JAVASCRIPT</span>
           </div>
@@ -35,7 +35,7 @@ export default () => {
           <div className="skills__listItem">
             <span className="skills__listSpan">SQL</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
