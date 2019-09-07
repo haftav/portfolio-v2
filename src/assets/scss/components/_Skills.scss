@@ -4,10 +4,6 @@
     height: auto;
     position: relative;
     z-index: 10;
-
-    @include breakpoint-lg {
-        // overflow-y: visible;
-    }
 }
 
 .skills__dividerContainer {
@@ -16,7 +12,7 @@
     left: 0;
     width: 105%;
     z-index: 5;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .skills__divider {
@@ -111,6 +107,7 @@
 
 .skills__listSpan {
     position: absolute;
+    z-index: inherit;
     top: 0;
     left: 0;
     width: 100%;
