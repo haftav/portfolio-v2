@@ -1,25 +1,53 @@
 .contact {
     @include full-screen-container;
     overflow: hidden;
-    height: 600px;
+    height: 550px;
     background: linear-gradient(to bottom, #013b4c 0%,#000c10 100%);
+
+    @include breakpoint-md {
+        height: 450px;
+    }
+
+    @include breakpoint-lg {
+        height: 750px;
+    }
 }
 
 .contact__header {
     color: white;
-    margin-top: 75px;
+    margin: 75px auto 50px auto;
+
+    @include breakpoint-lg {
+        margin-top: 350px;
+    }
 }
 
 .contact__iconsContainer {
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint-md {
+        width: 564px;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    @include breakpoint-lg {
+        width: 650px;
+    }
 }
 
 .contact__icon {
     width: 50px;
     height: 50px;
-    border: 1px solid white;
     margin: 25px;
+
+    @include breakpoint-md {
+        width: 70px;
+        height: 70px;
+    }
 }

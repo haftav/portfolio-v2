@@ -1,5 +1,8 @@
 import React from 'react';
+
 import LinkedInIcon from './Contact/LinkedInIcon';
+import GithubIcon from './Contact/GithubIcon';
+import EmailIcon from './Contact/EmailIcon';
 
 export default () => {
     return (
@@ -9,8 +12,12 @@ export default () => {
                 <div className="contact__icon">
                     <LinkedInIcon />
                 </div>
-                <div className="contact__icon">icon2</div>
-                <div className="contact__icon">icon3</div>
+                <div className="contact__icon">
+                    <GithubIcon />
+                </div>
+                <div className="contact__icon">
+                    <EmailIcon />
+                </div>
             </div>
         </div>
     )
