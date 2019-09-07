@@ -67,6 +67,10 @@
     @include breakpoint-md {
         margin: 125px auto;
     }
+
+    @include breakpoint-lg {
+        margin: 125px auto 375px auto;
+    }
 }
 
 .skills__list {

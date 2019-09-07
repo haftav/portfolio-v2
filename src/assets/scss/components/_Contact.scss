@@ -1,12 +1,13 @@
 .contact {
     @include full-screen-container;
-
+    overflow: hidden;
     height: 600px;
     background: linear-gradient(to bottom, #013b4c 0%,#000c10 100%);
 }
 
 .contact__header {
     color: white;
+    margin-top: 75px;
 }
 
 .contact__iconsContainer {
