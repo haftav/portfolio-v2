@@ -4,6 +4,10 @@
     height: auto;
     position: relative;
     z-index: 10;
+
+    @include breakpoint-lg {
+        // overflow-y: visible;
+    }
 }
 
 .skills__dividerContainer {
@@ -67,7 +71,7 @@
 
 .skills__list {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1024px;
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -75,7 +79,13 @@
     border-top: 1px solid white;
     border-left: 1px solid white;
     background-color: $color-dark-blue;
-    // transform: translateY(50%);
+
+    @include breakpoint-lg {
+        position: absolute;
+        bottom: -257.25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .skills__listItem {

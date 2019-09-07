@@ -1,7 +1,8 @@
 .splash {
     @include full-screen-container;
     position: relative;
-
+    overflow: hidden;
+    
     @include breakpoint-mobile-landscape {
         @include landscape-mode;
     }
