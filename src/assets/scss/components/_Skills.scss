@@ -4,8 +4,6 @@
     height: auto;
     position: relative;
     z-index: 10;
-    overflow: visible;
-    overflow-x: hidden;
 }
 
 .skills__dividerContainer {
@@ -60,10 +58,10 @@
 }
 
 .skills__header {
-    margin-top: 65px;
+    margin: 75px auto;
 
     @include breakpoint-md {
-        margin-top: 125px;
+        margin: 125px auto;
     }
 }
 
@@ -77,7 +75,7 @@
     border-top: 1px solid white;
     border-left: 1px solid white;
     background-color: $color-dark-blue;
-    transform: translateY(50%);
+    // transform: translateY(50%);
 }
 
 .skills__listItem {
