@@ -5,7 +5,6 @@ import SkillsDivider from './Skills/SkillsDivider';
 import imageSource from './Skills/images/trees.jpg';
 
 const LazyBackground = React.forwardRef(({ inView, ...rest }, ref) => {
-  console.log(inView);
   return inView ? <div className="skills__background" /> : <div ref={ref} />;
 });
 

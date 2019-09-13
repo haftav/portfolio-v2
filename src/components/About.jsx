@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { CSSTransition } from 'react-transition-group';
 
 import photo from './About/images/photo.jpg';
 
@@ -15,23 +16,34 @@ const LazyImage = React.forwardRef(
       }
     }, [inView]);
 
-    return (
-      <img
-        ref={ref}
-        src={`${loaded ? source : ''}`}
-        alt={`Tav Hafner ${device}`}
-        className={`about__photo${device}`}
-      />
-    );
+    if (loaded) {
+      return (
+        <CSSTransition
+          timeout={1000}
+          in={loaded}
+          appear
+          classNames="profilePhoto"
+        >
+          <img
+            ref={ref}
+            src={`${loaded ? source : ''}`}
+            alt={`Tav Hafner ${device}`}
+            className={`about__photo${device}`}
+          />
+        </CSSTransition>
+      );
+    } else {
+      return <div ref={ref} className={`lazyPlaceholder${device}`}/>;
+    }
   }
 );
 
 const About = () => {
-  const [setMobile, mobileInView] = useInView({
+  const [setDesktopRef, desktopInView] = useInView({
     triggerOnce: true,
   });
 
-  const [setDesktopRef, desktopInView] = useInView({
+  const [setMobileRef, mobileInView] = useInView({
     triggerOnce: true,
   });
 
@@ -41,12 +53,14 @@ const About = () => {
         <div className="about__headerContainer">
           <h2 className="about__header">About Me</h2>
           <div className="about__divider" />
-          <LazyImage
-            ref={setMobile}
-            inView={mobileInView}
-            source={photo}
-            device="Mobile"
-          />
+          <div className="about__mobileImageWrapper">
+            <LazyImage
+              ref={setMobileRef}
+              inView={mobileInView}
+              source={photo}
+              device="Mobile"
+            />
+          </div>
         </div>
         <div className="about__textContainer">
           <p className="about__paragraph">
