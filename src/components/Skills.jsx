@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 import SkillsDivider from './Skills/SkillsDivider';
 
-export default () => {
+const LazyBackground = React.forwardRef(({ inView, ...rest }, ref) => {
+  return inView ? <div className="skills__background" /> : <div ref={ref} />;
+});
+
+const Skills = () => {
+  const [setRef, inView] = useInView({
+    triggerOnce: true,
+  });
   return (
     <div className="skills">
       <div className="skills__dividerContainer">
         <SkillsDivider />
       </div>
-      <div className="skills__colorOverlay" />
+      <LazyBackground inView={inView} ref={setRef} />
       <div className="skills__content">
         <h2 className="skills__header">Skills</h2>
         <div className="skills__list">
@@ -38,5 +47,7 @@ export default () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default Skills;

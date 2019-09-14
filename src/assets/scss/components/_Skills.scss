@@ -4,6 +4,11 @@
     height: auto;
     position: relative;
     z-index: 10;
+
+    @include breakpoint-lg {
+        height: 600px;
+    }
+
 }
 
 .skills__dividerContainer {
@@ -28,24 +33,49 @@
     }
 }
 
-.skills__colorOverlay {
+.skills__background {
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url("../../components/Skills/images/trees.jpg");
+    width: 500px;
+    height: 250px;
+    background-image: url("../../components/Skills/images/trees_mobile_2x.jpg");
     background-repeat: no-repeat;
-    background-size: 1000%;
-    background-position: bottom;
+    background-size: auto;
+    background-position: center;
     
-    &:before {
+    @include breakpoint-sm {
+        width: 767px;
+    }
+
+    @include breakpoint-md {
+        background-image: url("../../components/Skills/images/trees_tablet_2x.jpg");
+        width: 1024px;
+        height: 370px;
+    }
+
+    @include breakpoint-lg {
+        background-image: url("../../components/Skills/images/trees_desktop_2x.jpg");
+        height: 600px;
+        width: 1440px;
+    }
+
+    @include breakpoint-xl {
+        width: 100%;
+    }
+        
+    &:after {
         position: absolute;
         content: '';
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #034C62;
-        opacity: .95;
+        background: linear-gradient(to top, #00222c 0%, #25435c 100%);
+        opacity: .85;
+
+        @include breakpoint-lg {
+            background: linear-gradient(to top, #09181cf2 0%, #194158 100%);
+            opacity: .95;
+        }
     }
 }
 
