@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import SkillsDivider from './Skills/SkillsDivider';
-import imageSource from './Skills/images/trees.jpg';
 
 const LazyBackground = React.forwardRef(({ inView, ...rest }, ref) => {
   return inView ? <div className="skills__background" /> : <div ref={ref} />;
