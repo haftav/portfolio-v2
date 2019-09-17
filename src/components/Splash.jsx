@@ -21,7 +21,7 @@ export default () => {
       <div className="splash__diagonalContainer">
         <SplashDiagonal />
       </div>
-      <div className="backgroundLeft" />
+      <div className="splash__background" />
     </div>
   )
 }
