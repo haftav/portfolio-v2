@@ -2,6 +2,12 @@
     @content;
 }
 
+@mixin breakpoint-se {
+    @media screen and (min-width: 0px) {
+        @content;
+    }
+}
+
 @mixin breakpoint-sm {
     @media screen and (min-width: $layout-breakpoint-sm) {
         @content;
