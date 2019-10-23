@@ -9,15 +9,15 @@ export default () => {
         <div className='contact'>
             <h2 className="contact__header">Get In Touch.</h2>
             <div className="contact__iconsContainer">
-                <div className="contact__icon">
-                    <LinkedInIcon />
-                </div>
-                <div className="contact__icon">
+                <a className="contact__icon" href="https://github.com/haftav">
                     <GithubIcon />
-                </div>
-                <div className="contact__icon">
+                </a>
+                <a className="contact__icon" href="https://www.linkedin.com/in/tavhafner/">
+                    <LinkedInIcon />
+                </a>
+                <a className="contact__icon" href="mailto:tavhafnerdev@gmail.com">
                     <EmailIcon />
-                </div>
+                </a>
             </div>
         </div>
     )
