@@ -69,7 +69,7 @@ const About = () => {
             lies across the full stack of development, from creating rich and
             robust user interfaces to building and testing APIs. I currently
             work on the front end team at Overstock.com, where my contributions
-            to projects have been estimated to save 600+ hours of work per year.{' '}
+            to projects have been estimated to save 600+ hours of work per year.
           </p>
           <p className="about__paragraph">
             When I’m not coding, I enjoy playing guitar, watching movies,

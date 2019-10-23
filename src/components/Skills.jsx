@@ -27,19 +27,19 @@ const Skills = () => {
             <span className="skills__listSpan">REACT</span>
           </div>
           <div className="skills__listItem">
-            <span className="skills__listSpan">HTML</span>
+            <span className="skills__listSpan">HTML5</span>
           </div>
           <div className="skills__listItem">
-            <span className="skills__listSpan">CSS/SASS/LESS</span>
+            <span className="skills__listSpan">CSS3</span>
           </div>
           <div className="skills__listItem">
             <span className="skills__listSpan">NODE</span>
           </div>
           <div className="skills__listItem">
-            <span className="skills__listSpan">TESTING</span>
+            <span className="skills__listSpan">JEST</span>
           </div>
           <div className="skills__listItem">
-            <span className="skills__listSpan">BUILDING</span>
+            <span className="skills__listSpan">WEBPACK</span>
           </div>
           <div className="skills__listItem">
             <span className="skills__listSpan">SQL</span>
