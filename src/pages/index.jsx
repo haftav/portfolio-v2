@@ -6,6 +6,8 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 
+import photo from '../components/About/images/photo.jpg';
+
 import '../assets/scss/main.scss';
 
 export default () => {
@@ -16,6 +18,7 @@ export default () => {
           <meta charSet="utf-8" />
           <meta name="description" content="I'm a professional front end engineer with knowledge across the full stack of web development." />
           <title>Tav Hafner Web Development</title>
+          <link rel="icon" href={photo} />
       </Helmet>
       <Splash />
       <About />
